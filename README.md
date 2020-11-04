@@ -72,6 +72,15 @@ module.exports = {
   plugins: []
 }
 ```
+10. Automating the css build process with nodemon
+    ```javascript
+    npm install --save-dev nodemon
+    ```
+    Add the following to package.json scripts section
+    ```javascript
+    "auto": "nodemon -x npm run {npm build script name} -w {path to tailwind styles.css} -w tailwind.config.js"
+    ```
+    Now run `npm run auto`
 ## Usage
 
 1. Common Utility Patterns extracted as classes
@@ -133,4 +142,3 @@ module.exports = {
   }
 }
 ```
-4. 
