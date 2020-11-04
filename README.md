@@ -2,12 +2,12 @@
 ## Setup
 
 1. Install Stylelint
-`npm install --save-dev stylelint stylelint-config-standard`
+`npm install --save-dev stylelint stylelint-config-recommended`
 
 2. Create a file named `stylelint.config.js` with the following
 ```javascript
 module.exports = {
-  extends: ["stylelint-config-standard"],
+  extends: ["stylelint-config-recommended"],
   rules: {
     "at-rule-no-unknown": [
       true,
